@@ -1,0 +1,21 @@
+{
+  "name": "Build it",
+  "description": "Gulp tasks",
+  "main": "gulpfile.js",
+  "authors": [
+    "Daniel Domermark <done@supr.se> (supr.se)"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    
+  }
+}

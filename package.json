@@ -1,0 +1,58 @@
+{
+  "name": "Build it",
+  "version": "1.0.0",
+  "description": "Gulp tasks",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/done/build-it.git"
+  },
+  "author": "Daniel Domermark <done@supr.se> (supr.se)",
+  "license": "ISC",
+  "homepage": "https://github.com/done/build-it",
+  "devDependencies": {
+    "aliasify": "^1.8.0",
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.11",
+    "browserify": "^12.0.1",
+    "connect": "^3.4.0",
+    "connect-livereload": "^0.5.3",
+    "del": "^2.0.2",
+    "globby": "^3.0.1",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat-vendor": "0.0.4",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgstore": "^5.0.5",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "lodash": "^3.10.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4",
+    "serve-index": "^1.7.2",
+    "serve-static": "^1.10.0",
+    "through2": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-paths": "^2.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.5.0",
+    "opn": "^3.0.2"
+  },
+  "dependencies": {
+    
+  }
+}
