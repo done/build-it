@@ -8,7 +8,7 @@ var config = require('../config')
 
  // Jade
 gulp.task('jade', function () {
-	return gulp.src('app/jade/**/*.jade')
+	return gulp.src(['app/jade/**/*.jade', '!app/jade/templates/**/*'])
 		.pipe(jade())
 		.on('error', error('JADE'))
 		.pipe(gulp.dest(config.dist))

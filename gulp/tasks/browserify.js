@@ -12,6 +12,7 @@ var config = require('../config')
 	, sourcemaps = require('gulp-sourcemaps')
 	, size = require('gulp-size')
 	, aliasify = require('aliasify')
+	, jadeify = require('jadeify')
 	, watchify = require('watchify')
 	, assign = require('lodash').assign
 	, error = require('../error')
@@ -74,6 +75,10 @@ if ( config.watch ) {
  */
 
 b.transform(aliasify, config.aliasify);
+
+if ( !!config.jadeify ) {
+	b.transform(jadeify, config.jadeify);
+}
 
 // TODO: 
 // bundler.transform(babelify.configure({

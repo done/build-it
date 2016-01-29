@@ -76,11 +76,22 @@ config.aliasify = {
 
 	aliases: {
 		'app' : '../app/scripts',
-		'templates' : '../app/templates',
+		'templates' : '../app/jade/templates',
 		'lib' : '../app/scripts/vendor'
 	},
 	configDir: __dirname,
 	verbose : false
+
+};
+
+/**
+ * Jadeify
+ * 
+ */
+config.jadeify = {
+
+	compileDebug: true,
+	pretty: true
 
 };
 
