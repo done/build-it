@@ -6,6 +6,6 @@ var gulp = require('gulp')
 
 gulp.task('build', function(done){
 	
-	runSequence('clean', ['jade', 'sass', 'jshint', 'svg', 'images', 'vendor', 'browserify'], done);
+	runSequence('clean', ['jade', 'sass', 'svg', 'images', 'jshint', 'vendor', 'browserify'], done);
 
 });

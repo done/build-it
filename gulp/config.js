@@ -54,11 +54,11 @@ config.images = {
 config.scripts = {
 	input : {
 		dir: 'app/scripts',
-		name: 'app.js'
+		name: 'index.js'
 	},
 	output : {
 		dir: 'scripts',
-		name: 'bundle.js'	
+		name: 'bundle.js'
 	}
 	
 };

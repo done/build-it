@@ -35,14 +35,6 @@ gulp.task('vendor', function() {
 		.pipe(gulp.dest(config.dist + '/' + config.scripts.output.dir + '/'));
 
 	return stream;
-
-	// return browserify({debug: true})
-	// 	//.require('jquery')
-	// 	//.require('lodash', {expose: 'underscore'})
-	// 	.require(config.scripts.input.dir + '/vendor/fx.js')
-	// 	.bundle()
-	// 	.pipe(source('vendor.js'))
-	// 	.pipe(gulp.dest(config.dist + '/' + config.scripts.output.dir))
 });
 
 /**

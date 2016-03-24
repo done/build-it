@@ -16,7 +16,7 @@ var gutil = require('gulp-util');
  */
 gulp.task('jshint', function(){
 
-	return gulp.src(config.scripts.input.dir + '/' + config.scripts.input.name)
+	return gulp.src(config.scripts.input.dir + '/**/*.js')
 		.on('error', gutil.log.bind(gutil, 'Jshint Error'))
 		.pipe(jshint('.jshintrc'))
 		.pipe(jshint.reporter(stylish));

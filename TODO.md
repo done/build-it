@@ -4,3 +4,4 @@
 * Bower 
 * Asset revisioning
 * Getting started instructions
+* AWS upload (assets)
