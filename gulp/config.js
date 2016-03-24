@@ -18,6 +18,19 @@ var config = {
 };
 
 /**
+ * Copy
+ */
+config.copy = {
+
+	files : [
+		// { input: 'app/**.*', output: ''},
+		// { input: 'app/lang/**.*', output: 'lang'},
+		// { input: 'app/fonts/**/*', output: 'fonts'}
+	]
+
+};
+
+/**
  * Images
  * 
  */
@@ -60,11 +73,11 @@ config.styles = {
 	],
 	input: {
 		dir: 'app/sass',
-		name: 'main.scss'
+		name: 'app.scss'
 	},
 	output : {
 		dir: 'styles',
-		name: 'main.css'
+		name: 'app.css'
 	}
 };
 
