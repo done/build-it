@@ -101,17 +101,18 @@ function bundle(){
 			browserSync.notify('Browserify Error!');
 			this.emit('end');
 		})
+
 		// Our output file
 		.pipe(source(config.scripts.output.name))
 		// Add support for streams (like the gulp-streamify)
 		.pipe(buffer())
 		// Initialize source maps
-		.pipe(sourcemaps.init({loadMaps: true}))
+		.pipe(gulpif(!production, sourcemaps.init({loadMaps: true})))
 		// Uglify the source
 		.pipe(uglify())
 			.on('error', gutil.log)
 		// Create our source maps file
-		.pipe(sourcemaps.write('./'))
+		.pipe(gulpif(!production, sourcemaps.write('./')))
 		// Output destination
 		.pipe(gulp.dest(config.dist + '/' + config.scripts.output.dir))
 		// Size output
